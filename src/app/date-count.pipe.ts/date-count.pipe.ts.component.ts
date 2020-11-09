@@ -15,10 +15,10 @@
   //     var dateCounter = dateDifferenceSeconds/secondsInDay;
   
       if (dateCounter >= 1 && value > todayWithNoTime){
-  //       return dateCounter;
-  //     }else{
-  //       return 0;
-  //     }
-  //   }
+        return dateCounter;
+      }else{
+        return 0;
+      }
+    }
   
-  // }
+  }
