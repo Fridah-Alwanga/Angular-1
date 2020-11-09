@@ -1,0 +1,17 @@
+button {
+    align-self: left;
+    align-items: left;
+    color:blue;
+}
+.description{
+    padding-top: 4%;
+}
+.form-control{
+    border-radius: 25px;
+    display: flex;
+}
+.dec{
+    background-image: url(https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547__340.jpg);
+    color: white;
+    background-size: cover;
+}

@@ -1,0 +1,30 @@
+<div class="dec">
+  <div class="container">
+      <h1>WORDS OF LIGHT</h1>
+      <hr>
+      <div class="row">
+          <div class="col-md-7">
+              <p>Welcome to our Quote App where you get inspired and can also add your own quotes to get others inspired.
+              </p>
+              <div *ngFor='let quote of quotes; let i = index' class="card-body">
+              <li class="card card-body bg-info">{{quote.name}} <br><br> 
+                  {{quote.description}}
+              </li>
+              <button (click)= 'toggleDetails (i)' class="btn btn-outline-primary btn-md">Quote..Description</button><br>
+              
+              <div *ngIf='quote.showDescription'><br>
+                  <app-quote-details  [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-details>
+              </div>
+              <div class="description">
+                  <button type="button" class="btn btn-warning" (click) = 'upvoteButton(i)'>Upvotes.. : {{quote.upvotes}}</button><br><br>
+                  <button type="button" class="btn btn-warning" (click) = 'downvoteButton(i)'>Downvotes :  {{quote.downvotes}}</button><br><br>
+              </div>
+              </div>
+          </div>
+          <div class="col-md-5">
+            <app-quote-form (addQuote)='addNewQuote($event)'></app-quote-form>
+          </div>
+       </div>
+     </div>
+  </div>
+  
