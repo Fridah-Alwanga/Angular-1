@@ -10,7 +10,7 @@
               <li class="card card-body bg-info">{{quote.name}} <br><br> 
                   {{quote.description}}
               </li>
-              <button (click)= 'toggleDetails (i)' class="btn btn-outline-primary btn-md">Quote..Description</button><br>
+              <!-- <button (click)= 'toggleDetails (i)' class="btn btn-outline-primary btn-md">Quote..Description</button><br> -->
               
               <div *ngIf='quote.showDescription'><br>
                   <app-quote-details  [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-details>
