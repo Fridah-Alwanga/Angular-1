@@ -1,6 +1,9 @@
-# Quotes
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+# Project Name
+Quotes
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 4.0.5
+## Author Name
+Fridah Alwanga
+## Description Of The Project
 
 ## Development server
 
